@@ -97,9 +97,4 @@ class Dog
   end 
 
 
-  
-  
-  
-  
-  
 end 
