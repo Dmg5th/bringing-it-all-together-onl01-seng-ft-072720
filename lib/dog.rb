@@ -77,7 +77,7 @@ class Dog
  
     
   def self.find_by_name(name)
-      # binding.pry  
+      binding.pry  
   end 
 
 
