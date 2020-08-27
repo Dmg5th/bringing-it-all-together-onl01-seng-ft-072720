@@ -43,7 +43,7 @@ class Dog
     dog_obj 
     
    
-    binding.pry 
+    # binding.pry 
   end 
   
   
