@@ -12,7 +12,7 @@ class Dog
   def self.create_table
     sql = <<-SQL 
       CREATE TABLE dogs (
-      id PRIMARY KEY INTEGER, 
+      id INTEGER PRIMARY KEY , 
       name TEXT, 
       breed TEXT 
       );  
@@ -20,6 +20,9 @@ class Dog
     
     DB[:conn].execute(sql)
   end 
+  
+  
+
   
   
   
