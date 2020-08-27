@@ -41,9 +41,11 @@ class Dog
     dog_obj = Dog.new(hash)
     dog_obj.save 
     dog_obj 
-    
    
-    # binding.pry 
+  end 
+  
+  def self.new_from_db(row)
+      binding.pry 
   end 
   
   
