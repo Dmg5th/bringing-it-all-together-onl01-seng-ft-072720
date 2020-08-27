@@ -33,8 +33,8 @@ class Dog
       VALUES (?,?)
      );  
     SQL
-   
-    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
+    DB[:conn].execute(sql, self.name, self.breed)  
+    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM songs")[0][0]
   end 
   
   
