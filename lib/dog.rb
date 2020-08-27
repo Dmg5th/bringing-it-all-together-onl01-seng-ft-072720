@@ -38,9 +38,10 @@ class Dog
   end 
   
   def self.create(hash)
-    dog_obj = 
+    dog_obj = Dog.new(hash)
+    
    
-    # binding.pry 
+    binding.pry 
   end 
   
   
