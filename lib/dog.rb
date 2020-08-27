@@ -86,6 +86,12 @@ class Dog
       # binding.pry 
  
   end 
+  
+  def update 
+    sql = <<-SQL 
+    UPDATE 
+    SQL
+  end 
 
 
   
