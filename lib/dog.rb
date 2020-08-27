@@ -82,7 +82,11 @@ class Dog
     WHERE name = ? 
     SQL
     result = DB[:conn].execute(sql, name)[0][0]
-      binding.pry  
+    DB[:conn].execute(sql,id).map do |row|
+            self.new_from_db(row)
+    end.first
+    
+      # binding.pry  
   end 
 
 
