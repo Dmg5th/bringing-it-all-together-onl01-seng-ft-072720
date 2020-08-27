@@ -64,7 +64,7 @@ class Dog
     # binding.pry 
   end 
   
-  
+  def self.find_or_create_by(name:, breed)
 
   
   
