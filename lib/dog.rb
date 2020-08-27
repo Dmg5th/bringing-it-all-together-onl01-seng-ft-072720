@@ -77,7 +77,12 @@ class Dog
  
     
   def self.find_by_name(name)
-      # binding.pry  
+    sql = <<-SQL
+    SELECT * FROM dogs 
+    WHERE name = ? 
+    SQL
+    result = DB[:conn].execute(sql, id)[0][0]
+      binding.pry  
   end 
 
 
