@@ -84,14 +84,15 @@ class Dog
     result = DB[:conn].execute(sql, name)[0]
     Dog.new(id: result[0], name:[1], breed: [2])
       # binding.pry 
- 
   end 
   
   def update 
     sql = <<-SQL 
     UPDATE dogs SET name = ?, breed = ? WHERE id = ?"
-    DB[:conn].execute(sql, self.name, self.album, self.id)
     SQL
+    
+    DB[:conn].execute(sql, self.name, self.breed, self.id)
+   
   end 
 
 
