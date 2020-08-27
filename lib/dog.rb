@@ -74,7 +74,11 @@ class Dog
     end
     dog 
   end
-    # binding.pry 
+ 
+    
+  def self.find_by_name(name)
+      # binding.pry  
+  end 
 
 
   
