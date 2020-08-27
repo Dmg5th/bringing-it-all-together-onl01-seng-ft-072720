@@ -29,10 +29,8 @@ class Dog
   
   def save
     sql = <<-SQL 
-      CREATE TABLE dogs (
-      id INTEGER PRIMARY KEY , 
-      name TEXT, 
-      breed TEXT 
+      INSERT INTO dogs (
+     
       );  
     SQL
     DB[:conn].execute(sql)  
