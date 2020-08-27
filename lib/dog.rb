@@ -46,7 +46,7 @@ class Dog
   
   def self.new_from_db(row)
       id = row[0] 
-      binding.pry 
+      # binding.pry 
   end 
   
   
